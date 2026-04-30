@@ -2,114 +2,26 @@
 <html lang="si">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Agenda</title>
+
   <link rel="stylesheet" href="style.css">
+
+  Firebase
+  https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js
+  https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js
 </head>
 <body>
 
-<h1>🎉 Event Agenda</h1>
+<header>🎉 Event Agenda</header>
 
-<section id="updates">
-  <h2>📢 Updates</h2>
-  <input type="text" id="updateInput" placeholder="Type an update...">
-  <button onclick="addUpdate()">Add</button>
+<section class="updates">
+  <input id="updateInput" placeholder="Type live update...">
+  <button onclick="addUpdate()">➕</button>
   <ul id="updateList"></ul>
 </section>
 
-<section id="agenda">
-  <h2>📋 Agenda</h2>
-
-  <div class="task">
-    <input type="checkbox" id="task1">
-    <label>1) වාසනා මුට්ටි – Sasindu, Gayani</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task2">
-    <label>2) 200M දිවීම – Kavinda, Roshen, Nisal, Sasindu, Dilisha, Thilini, Dewmini</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task3">
-    <label>3) සිඟිති පාර්සල් – Thilini, Dewmini</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task4">
-    <label>4) අලියට ඇස තැබීම – Vishmitha, Thilini</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task5">
-    <label>5) බනිස්කෑම – Vishwa, Dewmini</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task6">
-    <label>6) එ්දන්ඩේ යාම – Nimesh</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task7">
-    <label>7) ඩෝනි පැනීම – Nisal, Ayesh</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task8">
-    <label>8) බැලුම් පිපිරීම – Ranuga, Denuwan</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task9">
-    <label>9) පි පාස්කිරීම – Kavinda, Nimesh, Sasindu, Roshen</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task10">
-    <label>10) ඉදිකට්ටටට නුල දැමීම – Dewmini, Kavindu, Ranuga</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task11">
-    <label>11) ඩකාට්ටටඩපාර – Chamal, Muditha, Sadeesha, Aresha</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task12">
-    <label>12) තුන් පා දිවීම – Sasindu, Roshen, Dewmini</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task13">
-    <label>13) අන්ඳයාට කෑම – Vishwa, Ayesh, Vishmitha, Nimesh</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task14">
-    <label>14) බිත්තර ඇල්ලීම – Kavinda, Sasindu</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task15">
-    <label>15) සංගීත තරඟ – Kavinda, Roshen, Kavindu, Nisal</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task16">
-    <label>16) කඹ ඇදීම – Chamal, Sadeesha, Aresha</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task17">
-    <label>17) පැණි බඹඩර් – All</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="task18">
-    <label>18) සැඟවුන අමුත්තා – Nethsarani</label>
-  </div>
-
-</section>
+<section id="agenda"></section>
 
 <script src="script.js"></script>
 </body>
