@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.event {
+    background: white;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.event input {
+    margin-right: 10px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#updates {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.update-item {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
