@@ -5,22 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Agenda</title>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js
-  https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js
+
+  <!-- ✅ Firebase SDKs (MUST be script tags) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 </head>
+
 <body>
 
-<header>🎉 Event Agenda 1</header>
+<header>🎉 Event Agenda</header>
 
 <section class="updates">
   <input id="updateInput" placeholder="Type live update...">
   <button onclick="addUpdate()">➕</button>
-  <ul id="updateList"></ul>
 </section>
+
+<ul id="updateList"></ul>
 
 <section id="agenda"></section>
 
+<!-- ✅ script.js MUST be last -->
 <script src="script.js"></script>
+
 </body>
 </html>
