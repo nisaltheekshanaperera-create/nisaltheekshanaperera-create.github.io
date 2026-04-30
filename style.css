@@ -1,53 +1,57 @@
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #74ebd5, #ACB6E5);
   margin: 0;
-  padding: 20px;
+  font-family: system-ui, sans-serif;
+  background: #f2f4f8;
 }
 
-h1 {
+header {
+  background: #4f46e5;
+  color: white;
+  padding: 15px;
   text-align: center;
-  color: #333;
+  font-size: 20px;
 }
 
-section {
+.updates {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+}
+
+.updates input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.updates button {
+  background: #22c55e;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+#updateList li {
   background: white;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 15px;
-  max-width: 700px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin: 5px 10px;
+  padding: 10px;
+  border-radius: 12px;
 }
 
 .task {
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 10px;
-  transition: 0.3s;
+  background: white;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.task:hover {
-  background: #f0f8ff;
-}
-
-input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-#updates input {
-  width: 70%;
-  padding: 8px;
-}
-
-button {
-  padding: 8px 12px;
-  background: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #45a049;
+.task.done {
+  opacity: 0.5;
+  text-decoration: line-through;
 }
